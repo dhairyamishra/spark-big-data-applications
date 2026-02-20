@@ -1,0 +1,16 @@
+// Spark Shell Practice Commands
+// Copy these commands one by one into spark-shell when you connect
+
+:help
+sc.
+sc.version
+val myConstant: Int = 2437
+myConstant
+myConstant.
+myConstant.to
+myConstant.toFloat
+myConstant
+myConstant.toFloat.toInt
+val myString = myConstant.toString
+:type myString
+:q

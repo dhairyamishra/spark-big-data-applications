@@ -1,0 +1,15 @@
+FROM bitnami/spark:3.4.1
+
+USER root
+
+WORKDIR /app
+
+COPY pipeline/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY pipeline/ .
+COPY scripts/ /app/scripts/
+
+USER 1001
+
+ENTRYPOINT ["spark-submit"]

@@ -1,0 +1,35 @@
+# Data
+data/raw/
+data/zones/
+data/streaming_input/
+data/streaming_checkpoint/
+backend/data/*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spark
+*.log
+metastore_db/
+spark-warehouse/
+derby.log
